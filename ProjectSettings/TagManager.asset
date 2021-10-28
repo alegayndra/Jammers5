@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Spawn
   - Platform
   - Room
   layers:
@@ -15,7 +16,7 @@ TagManager:
   - Water
   - UI
   - Room
-  - 
+  - Spawn
   - 
   - 
   - 

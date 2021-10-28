@@ -11,6 +11,7 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
 	[SerializeField] private Transform m_WallCheck;								//Posicion que controla si el personaje toca una pared
+	[SerializeField] public GameObject m_SpawnCheck;								//Posicion que controla si el personaje toca una pared
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
@@ -29,7 +30,7 @@ public class CharacterController2D : MonoBehaviour
 	private float prevVelocityX = 0f;
 	private bool canCheck = false; //For check if player is wallsliding
 
-	public float life = 10f; //Life of the player
+	public float life = 1f; //Life of the player
 	public bool invincible = false; //If player can die
 	private bool canMove = true; //If player can move
 
@@ -266,19 +267,21 @@ public class CharacterController2D : MonoBehaviour
 		if (!invincible)
 		{
 			animator.SetBool("Hit", true);
-			life -= damage;
-			Vector2 damageDir = Vector3.Normalize(transform.position - position) * 40f ;
-			m_Rigidbody2D.velocity = Vector2.zero;
-			m_Rigidbody2D.AddForce(damageDir * 10);
-			if (life <= 0)
-			{
-				StartCoroutine(WaitToDead());
-			}
-			else
-			{
-				StartCoroutine(Stun(0.25f));
-				StartCoroutine(MakeInvincible(1f));
-			}
+			WaitToDead();
+			// life = 0;
+			// Vector2 damageDir = Vector3.Normalize(transform.position - position) * 40f ;
+			// m_Rigidbody2D.velocity = Vector2.zero;
+			// m_Rigidbody2D.AddForce(damageDir * 10);
+			// if (life <= 0)
+			// {
+			// 	// StartCoroutine(WaitToDead());
+				
+			// }
+			// else
+			// {
+			// 	StartCoroutine(Stun(0.25f));
+			// 	StartCoroutine(MakeInvincible(1f));
+			// }
 		}
 	}
 
@@ -329,15 +332,16 @@ public class CharacterController2D : MonoBehaviour
 		m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
 	}
 
-	IEnumerator WaitToDead()
-	{
-		animator.SetBool("IsDead", true);
-		canMove = false;
-		invincible = true;
-		GetComponent<Attack>().enabled = false;
-		yield return new WaitForSeconds(0.4f);
-		m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);
-		yield return new WaitForSeconds(1.1f);
-		SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+	public void WaitToDead() {
+		SpawnCheck spawnScript = m_SpawnCheck.GetComponent<SpawnCheck>();
+		transform.position = new Vector3(spawnScript.posX, spawnScript.posY, transform.position.z);
+		// animator.SetBool("IsDead", true);
+		// canMove = false;
+		// invincible = true;
+		// GetComponent<Attack>().enabled = false;
+		// yield return new WaitForSeconds(0.4f);
+		// m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);
+		// yield return new WaitForSeconds(1.1f);
+		// SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
 	}
 }
