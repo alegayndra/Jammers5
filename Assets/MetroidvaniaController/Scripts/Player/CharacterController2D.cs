@@ -73,7 +73,7 @@ public class CharacterController2D : MonoBehaviour
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
 		for (int i = 0; i < colliders.Length; i++)
 		{
-			if (colliders[i].gameObject != gameObject)
+			if (colliders[i].gameObject != gameObject && !colliders[i].gameObject.CompareTag("Room"))
 				m_Grounded = true;
 				if (!wasGrounded )
 				{
@@ -94,7 +94,7 @@ public class CharacterController2D : MonoBehaviour
 			Collider2D[] collidersWall = Physics2D.OverlapCircleAll(m_WallCheck.position, k_GroundedRadius, m_WhatIsGround);
 			for (int i = 0; i < collidersWall.Length; i++)
 			{
-				if (collidersWall[i].gameObject != null)
+				if (collidersWall[i].gameObject != null && !collidersWall[i].gameObject.CompareTag("Room"))
 				{
 					isDashing = false;
 					m_IsWall = true;
