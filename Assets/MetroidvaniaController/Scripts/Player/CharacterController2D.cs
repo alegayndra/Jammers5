@@ -267,20 +267,21 @@ public class CharacterController2D : MonoBehaviour
 		if (!invincible)
 		{
 			animator.SetBool("Hit", true);
-			life = 0;
-			Vector2 damageDir = Vector3.Normalize(transform.position - position) * 40f ;
-			m_Rigidbody2D.velocity = Vector2.zero;
-			m_Rigidbody2D.AddForce(damageDir * 10);
-			if (life <= 0)
-			{
-				// StartCoroutine(WaitToDead());
-				WaitToDead();
-			}
-			else
-			{
-				StartCoroutine(Stun(0.25f));
-				StartCoroutine(MakeInvincible(1f));
-			}
+			WaitToDead();
+			// life = 0;
+			// Vector2 damageDir = Vector3.Normalize(transform.position - position) * 40f ;
+			// m_Rigidbody2D.velocity = Vector2.zero;
+			// m_Rigidbody2D.AddForce(damageDir * 10);
+			// if (life <= 0)
+			// {
+			// 	// StartCoroutine(WaitToDead());
+				
+			// }
+			// else
+			// {
+			// 	StartCoroutine(Stun(0.25f));
+			// 	StartCoroutine(MakeInvincible(1f));
+			// }
 		}
 	}
 
@@ -332,10 +333,7 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 	public void WaitToDead() {
-		Debug.Log("WaitToDead");
 		SpawnCheck spawnScript = m_SpawnCheck.GetComponent<SpawnCheck>();
-		// transform.position.x = m_SpawnCheck.position.x;
-		// transform.position.y = m_SpawnCheck.position.y;
 		transform.position = new Vector3(spawnScript.posX, spawnScript.posY, transform.position.z);
 		// animator.SetBool("IsDead", true);
 		// canMove = false;
