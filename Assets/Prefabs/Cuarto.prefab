@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2093550545481528070}
   - component: {fileID: 2093550545481528072}
   - component: {fileID: 2093550545481528071}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2093550545768202425}
   - component: {fileID: 2093550545768202424}
   - component: {fileID: 2093550545768202426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CM vcam1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 2093550546425960732}
   - component: {fileID: 2093550546425960731}
   - component: {fileID: 2093550546425960733}
-  m_Layer: 2
+  m_Layer: 6
   m_Name: Cuarto
   m_TagString: Untagged
   m_Icon: {fileID: 0}

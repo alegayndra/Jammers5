@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public CharacterController2D controller;
 	public Animator animator;
+	public GameObject player;
 
 	public float runSpeed = 40f;
 
@@ -46,6 +47,18 @@ public class PlayerMovement : MonoBehaviour {
 		}
 		*/
 
+	}
+
+	public void OnTriggerEnter2D(Collider2D other){
+		if(other.gameObject.CompareTag("Platform")){
+			player.transform.parent = other.gameObject.transform;
+		}
+	}
+
+	public void OnTriggerExit2D(Collider2D other){
+		if(other.gameObject.CompareTag("Platform")){
+			player.transform.parent = null;
+		}
 	}
 
 	public void OnFall()
