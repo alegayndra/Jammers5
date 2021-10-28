@@ -199,6 +199,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CamaraCeleste
       objectReference: {fileID: 0}
+    - target: {fileID: 2093550546425960730, guid: 3690117d0a0ff924f9afd9118e261033, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 2093550546425960732, guid: 3690117d0a0ff924f9afd9118e261033, type: 3}
       propertyPath: m_RootOrder
       value: 6
