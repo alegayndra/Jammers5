@@ -94,6 +94,7 @@ MonoBehaviour:
     m_Bits: 53
   m_GroundCheck: {fileID: 4291727345091452}
   m_WallCheck: {fileID: 4986330650710208}
+  m_SpawnCheck: {fileID: 8642310682297488126}
   canDoubleJump: 0
   m_DashForce: 25
   life: 10
