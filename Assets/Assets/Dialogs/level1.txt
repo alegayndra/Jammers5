@@ -1,9 +1,9 @@
-xipe: presiona ENTER para avanzar el diálogo
-zeltzin:¿Qué hago aquí?
-zeltzin: ¿Xipe? No te veía desde que era pequeña. ¿Qué haces aquí?
-xipe: ¡Hola, Zeltzin!
-xipe: Así es, aquí puedo hablar. No es un sueño. Este es el primer nivel hacia el Mictlán, el reino de los muertos. Para poder llegar al eterno descanso de tu alma, debes dejar ir la vida terrenal y renunciar a tu cuerpo hasta quedar en los huesos. Pero no temas, yo te guiaré y acompañaré todo el camino.
-xipe: presiona FLECHA IZQUIERDA y FLECHA DERECHA para avanzar
-xipe: presiona Z para saltar
-xipe: presiona Z dos veces para un salto doble
-xipe: recárgate sobre la pared para trepar
+Xipe: presiona ENTER para avanzar el diálogo
+Zeltzin:¿Qué hago aquí?
+Zeltzin: ¿Xipe? No te veía desde que era pequeña. ¿Qué haces aquí?
+Xipe: ¡Hola, Zeltzin!
+Xipe: Así es, aquí puedo hablar. No es un sueño. Este es el primer nivel hacia el Mictlán, el reino de los muertos. Para poder llegar al eterno descanso de tu alma, debes dejar ir la vida terrenal y renunciar a tu cuerpo hasta quedar en los huesos. Pero no temas, yo te guiaré y acompañaré todo el camino.
+Xipe: presiona FLECHA IZQUIERDA y FLECHA DERECHA para avanzar
+Xipe: presiona Z para saltar
+Xipe: presiona Z dos veces para un salto doble
+Xipe: recárgate sobre la pared para trepar
