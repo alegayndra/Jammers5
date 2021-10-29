@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 2093550546425960731}
   - component: {fileID: 2093550546425960733}
   m_Layer: 6
-  m_Name: Cuarto
+  m_Name: CuartoConfiner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -94,7 +94,7 @@ MonoBehaviour:
     m_Bits: 53
   m_GroundCheck: {fileID: 4291727345091452}
   m_WallCheck: {fileID: 4986330650710208}
-  m_SpawnCheck: {fileID: 8642310682297488126}
+  m_SpawnCheck: {fileID: 622457400438548682}
   canDoubleJump: 0
   m_DashForce: 25
   life: 10
@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 114231493902538710}
   animator: {fileID: 95975118031919256}
+  player: {fileID: 0}
   runSpeed: 40
 --- !u!212 &212971026275759962
 SpriteRenderer:
