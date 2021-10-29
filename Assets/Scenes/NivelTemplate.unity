@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &565382979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6333416558702869088, guid: 06138b27644c45444af63dd55afc670b, type: 3}
+  m_PrefabInstance: {fileID: 6333416558359192791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &601392197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,9 +301,9 @@ MonoBehaviour:
   startOnAwake: 1
   showWithDialog:
   - {fileID: 614327204}
-  textUIObj: {fileID: 0}
+  textUIObj: {fileID: 565382979}
   dialoger: 1
-  dialogerObj: {fileID: 0}
+  dialogerObj: {fileID: 2037529638}
   shouldFollow: 0
   following: {fileID: 0}
   followingOffset: {x: 0, y: 0, z: 0}
@@ -328,7 +333,7 @@ MonoBehaviour:
     follow: {fileID: 0}
     followOffset: {x: 0, y: 0, z: 0}
     animatorOverwrite: {fileID: 0}
-  UIPhoto: {fileID: 0}
+  UIPhoto: {fileID: 1670978078}
   shouldStayOnScreen: 0
   textAudio: {fileID: 0}
   passAudio: {fileID: 0}
@@ -420,6 +425,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4660076192433278, guid: 50936cccdb69523458c1b42052ebafff, type: 3}
   m_PrefabInstance: {fileID: 686206483}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1670978078 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6333416557756614487, guid: 06138b27644c45444af63dd55afc670b, type: 3}
+  m_PrefabInstance: {fileID: 6333416558359192791}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1889346087
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +470,11 @@ Transform:
 --- !u!224 &1958691838 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6333416558016915241, guid: 06138b27644c45444af63dd55afc670b, type: 3}
+  m_PrefabInstance: {fileID: 6333416558359192791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037529638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6333416559071205461, guid: 06138b27644c45444af63dd55afc670b, type: 3}
   m_PrefabInstance: {fileID: 6333416558359192791}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2094796028
@@ -625,7 +646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6333416558016915241, guid: 06138b27644c45444af63dd55afc670b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -384
+      value: -59.30127
       objectReference: {fileID: 0}
     - target: {fileID: 6333416558016915241, guid: 06138b27644c45444af63dd55afc670b, type: 3}
       propertyPath: m_SizeDelta.y
@@ -661,7 +682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6333416558016915241, guid: 06138b27644c45444af63dd55afc670b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 6.199005
       objectReference: {fileID: 0}
     - target: {fileID: 6333416558016915241, guid: 06138b27644c45444af63dd55afc670b, type: 3}
       propertyPath: m_AnchoredPosition.y
