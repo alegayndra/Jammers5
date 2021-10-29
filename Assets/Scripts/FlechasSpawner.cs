@@ -15,7 +15,7 @@ public class FlechasSpawner : MonoBehaviour {
     void Update() {
         if (ticks <= 0 && Random.Range(-10.0f, 20.0f) > 0) {
             ticks = 60;
-            Instantiate(flechaPrefab, new Vector3(transform.position.x + Random.Range(-5.0f, 5.0f), transform.position.y+ Random.Range(-2.0f, 2.0f), 0), Quaternion.identity);
+            Instantiate(flechaPrefab, new Vector3(transform.position.x + Random.Range(-7.5f, 7.5f), transform.position.y+ Random.Range(-2.0f, 2.0f), 0), Quaternion.identity);
         } else {
             ticks--;
         }
